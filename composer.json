@@ -1,0 +1,13 @@
+{
+    "name": "itot/glody2",
+    "description": "Un petit moteur de recherche",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dark Angel",
+            "email": "jonathanyombo@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
