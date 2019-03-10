@@ -14,7 +14,7 @@ if (!function_exists('recherche')){
     function recherche($fichier){
         $fichier = "%".$fichier."%";
         $db = dbConnect();
-        $bdd = $db->prepare("SELECT * FROM fichiers WHERE nom LIKE :fichier");
+        $bdd = $db->prepare("SELECT * FROM fichiers WHERE nom LIKE :fichier ORDER BY nom ASC");
         $bdd->execute(['fichier'=>$fichier]);
         $fichiers = [];
         while ($f=$bdd->fetch(PDO::FETCH_ASSOC)){
